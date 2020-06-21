@@ -1,9 +1,16 @@
-def add_or_remove_cash(pet_shop_hash, cash)
-    if (cash > 0)
-        pet_shop_hash[:admin][:total_cash] += cash
-    elsif (cash < 0)
-        pet_shop_hash[:admin][:total_cash] += cash
-    end
-end 
+# def pet_shop_name(pet_shop)
+#     return pet_shop[:name]
+# end
 
-p add_or_remove_cash
+# def total_cash(pet_shop)
+#     return pet_shop[:admin][:total_cash]
+# end
+
+# def add_or_remove_cash(pet_shop, cash)
+#    total = pet_shop[:admin][:total_cash] + cash
+#    return total
+# end 
+
+def pets_sold(pet_shop)
+    return pet_shop[:admin][:pets_sold]
+end

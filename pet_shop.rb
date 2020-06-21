@@ -20,9 +20,9 @@
 #     return pets_sold
 # end
 
-def stock_count(pet_shop)
-    return pet_shop[:pets].count
-end
+# def stock_count(pet_shop)
+#     return pet_shop[:pets].count
+# end
 
 # def pets_by_breed(pet_shop, breed)
 #     total = []
@@ -49,7 +49,11 @@ end
 #     return find_pet_by_name
 # end
 
-def add_pet_to_stock(pet_shop, new_pet)
-    stock_count = pet_shop[:pets] << new_pet
-    return stock_count
+# def add_pet_to_stock(pet_shop, new_pet)
+#     stock_count = pet_shop[:pets] << new_pet
+#     return stock_count
+# end
+
+def customer_cash(customers)
+    return customers[:cash]
 end

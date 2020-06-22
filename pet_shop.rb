@@ -45,8 +45,8 @@ def find_pet_by_name(pet_shop, name)
 end
 
 def remove_pet_by_name(pet_shop, name)
-    find_pet_by_name = pet_shop[:pets][:name].delete()
-    return find_pet_by_name
+    delete_pet_by_name = find_pet_by_name(pet_shop, name)
+    pet_shop[:pets].delete(delete_pet_by_name)
 end
 
 # def add_pet_to_stock(pet_shop, new_pet)
